@@ -34,3 +34,9 @@ knn.fit(X_train, y_train)
 accuracy = knn.score(X_test, y_test)
 
 print("Accuracy: {:.2f} %".format(accuracy *100))
+
+# Make predictions on new data
+new_data = [[100, 70, 80, 26.0, 0.5, 21]]  # Glucose	BloodPressure	Insulin	BMI	DiabetesPedigreeFunction	Age
+prediction = knn.predict(new_data)
+
+print("Prediction: {}".format(prediction))
