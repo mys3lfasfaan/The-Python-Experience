@@ -224,19 +224,19 @@
                     <legend>Contact Details</legend>
                     <p>
                         <label for="firstName">First Name:</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="Mulla" autocomplete="off" required>
+                        <input type="text" name="firstName" id="firstName" placeholder="Mulla" autocomplete="on" required>
                     </p>
                     <p>
                         <label for="lastName">Last Name:</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Modi" autocomplete="off" required>
+                        <input type="text" name="lastName" id="lastName" placeholder="Modi" autocomplete="on" required>
                     </p>
                     <p>
                         <label for="password">Password:</label>
-                        <input type="password" name="password" id="password" placeholder="" autocomplete="off" required>
+                        <input type="password" name="password" id="password" placeholder="" autocomplete="on" required>
                     </p>
                     <p>
                         <label for="phone">Phone:</label>
-                        <input type="tel" name="phone" id="phone" placeholder="" autocomplete="off" pattern="[0-9]{10}" required>
+                        <input type="tel" name="phone" id="phone" placeholder="" autocomplete="on" pattern="[0-9]{10}" required>
                     </p>
                     <p>
                         <label for="decade">Favorite Decade:</label>
@@ -246,7 +246,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Fav Coffee</legend>
-                    <p>
+                    <!-- <p>
                         1 way:
                         <label for="coffee">Fav Coffee:</label>
                         <select name="coffee" id="coffee" multiple size="5">
@@ -260,7 +260,7 @@
                                 <option value="americano">Americano</option>
                                 <option value="others">Others</option>
                         </select>
-                    </p>
+                    </p> -->
                     <p>
                         2 way:
                         <label for="coffee">Fav Coffee:</label>
@@ -308,8 +308,13 @@
                 <fieldset>
                     <legend>Send me a note</legend>
                     <label for="message">Your Message:</label>
-
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
                 </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
             </form>
         </article>
         
