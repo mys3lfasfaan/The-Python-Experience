@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All contents which i want to learn">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>First Web Page</title>
+    <style>
+        html{
+            font-size: large;
+        }
+
+        body{
+            background-color: black;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello World!</h1>
+        <hr>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#Basics">Learn HTML</a>
+                </li>
+                <li>
+                    <a href="about.html">About Me</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>HTML</h2>
+        <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis alias laborum fuga velit nesciunt assumenda placeat provident aliquam harum, molestiae illum nam commodi rem modi eius nihil aut nulla voluptatem.</p>
+        
+        <h3>H3 & p tags</h3>
+        <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis alias laborum fuga velit nesciunt assumenda placeat provident aliquam harum, molestiae illum nam commodi rem modi eius nihil aut nulla voluptatem.</p>
+        
+        <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis voluptatum harum molestiae architecto minima nihil excepturi natus possimus, illo nemo sapiente, quibusdam quia minus enim sequi culpa dicta eveniet.
+            <br>
+            <br>
+        </p>
+    </main>
+    <hr>
+    <article id="Basics">
+        <h2>Basics of HTML: </h2>
+        <h3>Strong, emphasis  (italic), and html entities</h3>
+        <p>
+            <strong>hell no</strong>
+            <em>&nbsp;emphasis</em>
+            <br>
+            &lt;  &copy; &gt;
+
+            I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>
+        </p>
+        <hr>
+
+        <hr>
+        <h3>Extra:</h3>
+        <p>
+            <!-- TODO: Add full address -->
+            <address>talabkatta technologies</address>
+        </p>
+        
+        <hr>
+
+        <h2>Lists:</h2>
+        <p>
+            <ol>
+                <li>1.</li>
+                <li>1.</li>
+                <li>1.</li>
+                <li>1.</li>
+            </ol>
+            <ul>
+                <li>1.</li>
+                <li>1.</li>
+                <li>1.</li>
+                <li>1.</li>
+            </ul>
+            description list:
+            <dl>
+                <dt>North korea</dt>
+                <dd>Kim jung un ki MKB</dd>
+                <dt>South korea</dt>
+                <dd>Kim jung un ki MKB</dd>
+            </dl>
+        </p>
+
+        <hr>
+
+        <h2>Links:</h2>
+        <ul>
+            <li>
+                full address (absolute reference): <a href="http://google.com">google</a>
+            </li>
+            <li>
+                half address (relative reference): <a href="about.html">About</a>
+            </li>
+            <li>
+                to download: <a href="../Depth First Search.py" download="">DFS in python</a>
+            </li>
+            <li>
+                to contact: <a href="mailto:asf2087@gmail.com">Maulana Modi</a>
+            </li>
+            <li>
+                dial: <a href="tel:+916302770179">Number</a>
+            </li>
+            <li>
+                Target attribute: <a href="http://www.google.com" target="_blank">New tab</a>
+            </li>
+            <li>
+                Target attribute: <a href="http://www.google.com" target="_parent">Parent tab</a>
+            </li>
+            <li>
+                Target attribute: <a href="http://www.google.com" target="_top">Top tab</a>
+            </li>
+            <li>
+                Target attribute: <a href="http://www.google.com" target="_self">Self tab</a>
+            </li>
+        </ul>
+    <hr>
+        <h2>Images: </h2>
+        <ul>
+            <li>
+                <p>Confusion Matrix</p>
+                <figure>
+                    <img src="img/Picture1.jpg" alt="Something" width=400 height=300 loading="lazy" title="It's 6 o'Clock somewhere">
+                    <figcaption>
+                        Confusion Matrix 7x7
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <figcaption>Example of html5 code</figcaption>
+                    <p>
+                        <code>
+                            <h1>
+                                Hello World
+                            </h1>
+                        </code>
+                    </p>
+                </figure>
+            </li>
+        </ul>
+        
+        <hr>
+
+        <h2>Semantic Tags:</h2>
+        <h3>❗❗❗Avoid using divs, spans</h3>
+        <article id="vacation">
+            <aside>
+                <details>
+                    <summary>
+                        Guess the <mark>number of hours</mark> i code per day
+                    </summary>
+                    <p>
+                        I start at <time datetime="08:00">8 am</time> and i write code for <time datetime="PT3H">3 hours</time> every morning
+                    </p>
+                </details>
+            </aside>
+        </article>
+        <hr>
+
+        <h2>Tables:</h2>
+        <!-- Inline Element (Wont go to full width by default)-->
+        <!-- Scope is for Assistive technology No change to display-->
+        <table>
+            <caption>My Daily Schedule</caption>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Morning</th>
+                        <td>
+                            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                        </td>
+                        <td>Eat lunch</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Afternoon</th>
+                        <td>
+                            <time datetime="12:00">12pm</time>-<time datetime="3:00">3pm</time>
+                        </td>
+                        <td>Fuck</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Evening</th>
+                        <td rowspan="2">All other times</td>
+                        <td>Free Time</td>
+                    </tr>
+                <tr>
+                    <th scope="row">night</th>
+                    <td>Sleep</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">And tthatts what i doo every day</td>
+                    </tr>
+                </tfoot>
+        </table>
+        <hr>
+
+        <article id="contact">
+            <h2>Forms and inputs:</h2>
+            <p>Contact me:</p>
+            
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Mulla" autocomplete="off" required>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Modi" autocomplete="off" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="" autocomplete="off" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="" autocomplete="off" pattern="[0-9]{10}" required>
+                    </p>
+                    <p>
+                        <label for="decade">Favorite Decade:</label>
+                        <input type="number" name="decade" id="decade" 
+                        min="1950" max="2020" step="10" value="1980">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Fav Coffee</legend>
+                    <p>
+                        1 way:
+                        <label for="coffee">Fav Coffee:</label>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="Coffees">
+                                <option value="regular coffee" selected>Regular Coffee</option>
+                                <option value="iced Coffee">Iced Coffee</option>
+                            </optgroup>
+                                <option value="cappucino">Cappucino</option>
+                                <option value="latte">Latte</option>
+                                <option value="espresso">Espresso</option>
+                                <option value="americano">Americano</option>
+                                <option value="others">Others</option>
+                        </select>
+                    </p>
+                    <p>
+                        2 way:
+                        <label for="coffee">Fav Coffee:</label>
+                        <input type="text" name="coffee" id="coffee" list="coffee-list">
+                        <datalist id="coffee-list">
+                            <option value="coffee">
+                            <option value="cappucino">
+                            <option value="latte">
+                            <option value="espresso">
+                            <option value="americano">
+                            <option value="others">
+                        </datalist>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Fav Foood</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Do you have pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your Message:</label>
+
+                </fieldset>
+            </form>
+        </article>
+        
+        
+
+    </article>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+
+    </footer>
+</body>
+</html>
