@@ -1,0 +1,53 @@
+/*                  Precedence
+        Inline >> External and internal
+*/
+
+/* Universal Selectors */
+/* *{
+    font-family: 'Courier New', Courier, monospace;
+} */
+
+/* Element Selectors */
+html{
+    font-size: 22px;
+}
+
+body{
+    font-size: 22px;
+    border: 3px solid black;
+}
+
+main{
+    font-family: monospace;
+}
+
+button, input, textarea, select {
+    font:inherit;
+}
+
+h1, h2{
+    color: blue;
+}
+
+p {
+    color: purple;
+}
+
+p {
+    color: red ;
+}
+
+p span{
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/* Class Selecttors */
+.gray{
+    color: gray;
+}
+
+/* ID selectors */
+#second{
+    font-style: italic;
+}
